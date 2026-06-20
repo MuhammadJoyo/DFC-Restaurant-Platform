@@ -1,0 +1,53 @@
+/* DFC Design Tokens - Premium Black & Golden Yellow Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /* Color Palette */
+    --primary: hsl(43, 100%, 50%);       /* Vibrant Golden Yellow (#FFB700) */
+    --primary-hover: hsl(43, 100%, 43%); /* Darker Gold for hover states */
+    --primary-glow: hsla(43, 100%, 50%, 0.15);
+    
+    --secondary: hsl(0, 72%, 51%);      /* KFC/Foodpanda Inspired Red for badges/accents (#E11D48) */
+    --secondary-hover: hsl(0, 72%, 43%);
+    
+    --dark-bg: #0B0B0B;                  /* True Deep Premium Black */
+    --dark-surface: #141414;             /* Surface Container (Cards, Navbar) */
+    --dark-surface-elevated: #1E1E1E;    /* Elevated Elements (Hovered cards, Modals) */
+    
+    --text-primary: #F3F4F6;             /* Near White (Gray 100) */
+    --text-secondary: #9CA3AF;           /* Muted Gray (Gray 400) */
+    --text-muted: #6B7280;               /* Darker Muted Gray (Gray 500) */
+    --text-dark: #000000;                /* Pure Black for Contrast On Yellow buttons */
+    
+    --border-color: rgba(255, 183, 0, 0.1);  /* Subtly gold bordered layouts */
+    --border-color-muted: rgba(255, 255, 255, 0.05);
+    
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    
+    /* Shadows & Glows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.7);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.9);
+    --gold-glow: 0 0 20px rgba(255, 183, 0, 0.3);
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

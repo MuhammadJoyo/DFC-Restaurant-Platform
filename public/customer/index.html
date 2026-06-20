@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFC (Dadu Food Corner) - Premium Ordering Platform</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="../images/DFC-logo.jpeg" alt="DFC Logo">
+                <span>Dadu Food<strong>Corner</strong></span>
+            </a>
+            
+            <ul class="navbar-links" id="navbar-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <a href="cart.html" class="cart-badge-container" id="cart-btn" aria-label="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-badge" id="global-cart-count" style="display: none;">0</span>
+                </a>
+                
+                <a href="auth.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.88rem;">Login</a>
+                
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-img-backdrop"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tagline">Satisfy Your Cravings</span>
+                <h1 class="hero-title">Deliciousness <br>Delivered To Your <span class="text-primary-color">Doorstep</span></h1>
+                <p class="hero-desc">Experience the best hot broast, cheesy pizzas, spicy rolls, and traditional local biryanis cooked to perfection with premium spices by Dadu Food Corner.</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">Order Online Now</a>
+                    <a href="menu.html?category=Deals" class="btn btn-secondary">Explore Hot Deals</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="../images/zingerimmage.jpeg" alt="DFC Special Crispy Burger" class="hero-image">
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="section container">
+        <div class="section-header text-center">
+            <h2>Browse By <span class="text-primary-color">Category</span></h2>
+            <p>Select your favorite category to explore mouth-watering selections</p>
+        </div>
+        <div class="categories-grid">
+            <!-- Zinger & Broast -->
+            <div class="category-card" onclick="window.location.href='menu.html?category=Zinger%20%26%20Broast'">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                        <path d="M12 2v9"></path>
+                        <path d="M8 5h8"></path>
+                    </svg>
+                </div>
+                <h3>Zinger & Broast</h3>
+            </div>
+            <!-- Pizza -->
+            <div class="category-card" onclick="window.location.href='menu.html?category=Pizza'">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 11h.01"></path>
+                        <path d="M11 15h.01"></path>
+                        <path d="M16 16h.01"></path>
+                        <path d="M12 11h.01"></path>
+                        <path d="M2 12C2 6.5 6.5 2 12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10c-5.5 0-10-4.5-10-10z"></path>
+                        <path d="M12 2v20"></path>
+                        <path d="M2 12h20"></path>
+                    </svg>
+                </div>
+                <h3>Cheesy Pizza</h3>
+            </div>
+            <!-- Biryani -->
+            <div class="category-card" onclick="window.location.href='menu.html?category=Biryani'">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                        <path d="M12 6v6l4 2"></path>
+                    </svg>
+                </div>
+                <h3>Special Biryani</h3>
+            </div>
+            <!-- Rolls -->
+            <div class="category-card" onclick="window.location.href='menu.html?category=Rolls'">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 12h8"></path>
+                    </svg>
+                </div>
+                <h3>Spicy Rolls</h3>
+            </div>
+            <!-- Deals -->
+            <div class="category-card" onclick="window.location.href='menu.html?category=Deals'">
+                <div class="category-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                    </svg>
+                </div>
+                <h3>Discount Deals</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="section bg-dark-surface" style="background-color: var(--dark-surface);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Mega <span class="text-primary-color">Offers & Deals</span></h2>
+                <p>Limited time discounts you don't want to miss</p>
+            </div>
+            <div class="offers-grid">
+                <!-- Promo 1 -->
+                <div class="promo-card">
+                    <img src="../images/Burger-Deal.1.jpeg" alt="Burger Deal Promo" class="promo-img">
+                    <div class="promo-overlay"></div>
+                    <div class="promo-content">
+                        <span class="promo-tag">WEEKEND BLAST</span>
+                        <h3 class="promo-title">Zinger Burger Combo</h3>
+                        <p class="promo-desc">Get crispy Zinger, fries, and cold drink at a flat 20% discount.</p>
+                        <a href="menu.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem;">Order Deal</a>
+                    </div>
+                </div>
+                <!-- Promo 2 -->
+                <div class="promo-card">
+                    <img src="../images/Pizza-deal.2.jpeg" alt="Pizza Deal Promo" class="promo-img">
+                    <div class="promo-overlay"></div>
+                    <div class="promo-content">
+                        <span class="promo-tag">FAMILY FEAST</span>
+                        <h3 class="promo-title">Double Pizza Special</h3>
+                        <p class="promo-desc">Buy one medium pizza, get the second one at half price!</p>
+                        <a href="menu.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem;">Order Deal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Foods Section -->
+    <section class="section container">
+        <div class="section-header text-center">
+            <h2>Customer <span class="text-primary-color">Favorites</span></h2>
+            <p>Our most ordered items prepared hot and fresh daily</p>
+        </div>
+        <div class="food-grid">
+            <!-- Item 1 -->
+            <div class="food-card">
+                <span class="food-badge">Best Seller</span>
+                <div class="food-image-wrapper">
+                    <img src="../images/birayani-image.jpeg" alt="Special Biryani" class="food-img">
+                </div>
+                <div class="food-info">
+                    <span class="food-category">Biryani</span>
+                    <h3 class="food-title">DFC Special Chicken Biryani</h3>
+                    <p class="food-desc">Aromatic long grain basmati rice layered with spiced chicken, mint, saffron, and special spices.</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs. 320</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('biryani-01', 'DFC Special Chicken Biryani', 320, '../images/birayani-image.jpeg')" aria-label="Add to cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="food-card">
+                <span class="food-badge">Hot</span>
+                <div class="food-image-wrapper">
+                    <img src="../images/zingerimmage.jpeg" alt="Zinger Burger" class="food-img">
+                </div>
+                <div class="food-info">
+                    <span class="food-category">Zinger & Broast</span>
+                    <h3 class="food-title">Crispy Zinger Double Decker</h3>
+                    <p class="food-desc">Double crispy chicken patty, fresh lettuce, cheddar cheese slices, and spicy secret DFC mayonnaise.</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs. 450</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('zinger-01', 'Crispy Zinger Double Decker', 450, '../images/zingerimmage.jpeg')" aria-label="Add to cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="food-card">
+                <span class="food-badge">Top Rated</span>
+                <div class="food-image-wrapper">
+                    <img src="../images/pizaaa-imaage.jpeg" alt="Pizza" class="food-img">
+                </div>
+                <div class="food-info">
+                    <span class="food-category">Pizza</span>
+                    <h3 class="food-title">Cheesy Supreme Pizza</h3>
+                    <p class="food-desc">Loaded with spicy chicken chunks, bell peppers, olives, mushrooms, and layers of hot mozzarella cheese.</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs. 890 <span class="price-old">Rs. 990</span></span>
+                        <button class="add-to-cart-btn" onclick="addToCart('pizza-01', 'Cheesy Supreme Pizza', 890, '../images/pizaaa-imaage.jpeg')" aria-label="Add to cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="food-card">
+                <div class="food-image-wrapper">
+                    <img src="../images/Roll-deal.3.jpeg" alt="Spicy Roll" class="food-img">
+                </div>
+                <div class="food-info">
+                    <span class="food-category">Rolls</span>
+                    <h3 class="food-title">Garlic Mayo Chicken Roll</h3>
+                    <p class="food-desc">Grilled chicken cubes, wrapped in paratha with garlic sauce, green chutney, and sliced onions.</p>
+                    <div class="food-footer">
+                        <span class="food-price">Rs. 220</span>
+                        <button class="add-to-cart-btn" onclick="addToCart('roll-01', 'Garlic Mayo Chicken Roll', 220, '../images/Roll-deal.3.jpeg')" aria-label="Add to cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: var(--spacing-xxl);">
+            <a href="menu.html" class="btn btn-secondary">View Full Delicious Menu</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section bg-dark-surface" style="background-color: var(--dark-surface);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our <span class="text-primary-color">Gallery & Kitchen</span></h2>
+                <p>A sneak peek into our restaurant, staff, and food preparation</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/Dfc-enterance-point.jpeg" alt="DFC Entrance Point">
+                    <div class="gallery-hover-overlay">
+                        <h4>DFC Main Entrance</h4>
+                        <p>Welcome to Dadu Food Corner</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/biryani-counter-pic.jpeg" alt="Biryani Service Counter">
+                    <div class="gallery-hover-overlay">
+                        <h4>Service Counter</h4>
+                        <p>Always hot, fresh, and ready</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/opening images-with-baloons.jpeg" alt="DFC Celebration Grand Opening">
+                    <div class="gallery-hover-overlay">
+                        <h4>Grand Opening</h4>
+                        <p>Serving happiness with balloons</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/workers-and-owners-imagee.jpeg" alt="DFC Team Members">
+                    <div class="gallery-hover-overlay">
+                        <h4>Meet Our Team</h4>
+                        <p>Our passionate chefs and staff</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="navbar-brand" style="margin-bottom: var(--spacing-md);">
+                    <img src="../images/DFC-logo.jpeg" alt="DFC Logo">
+                    <span>Dadu Food<strong>Corner</strong></span>
+                </a>
+                <p>Building taste since day one. DFC serves the finest, crispiest fast foods, and mouth-watering local traditional menus. Quality ingredients and customer satisfaction are our core values.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="tracking.html">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menu Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="menu.html?category=Zinger%20%26%20Broast">Zinger & Broast</a></li>
+                    <li><a href="menu.html?category=Pizza">Cheesy Pizza</a></li>
+                    <li><a href="menu.html?category=Biryani">Special Biryani</a></li>
+                    <li><a href="menu.html?category=Rolls">Spicy Rolls</a></li>
+                    <li><a href="menu.html?category=Deals">Hot Discount Deals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Open Hours & Contact</h3>
+                <ul class="footer-contact-info">
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Ghareebabad, Dadu, Sindh, Pakistan</span>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>+92 300 1234567</span>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <span>Everyday: 12:00 PM - 02:00 AM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dadu Food Corner (DFC). All Rights Reserved.</p>
+            <div class="footer-payments">
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa Card">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+                <img src="https://img.icons8.com/color/48/000000/cash-in-hand.png" alt="Cash on Delivery">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
