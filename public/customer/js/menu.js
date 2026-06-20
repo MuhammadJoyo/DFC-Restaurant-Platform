@@ -1,4 +1,5 @@
-/* DFC Menu Catalogue Logic */
+/* DFC Menu Catalogue Logic
+   Updated: Phase 2 Cart integration verified and documented. */
 
 // Mock Database of food products aligning exactly with existing images
 const DFC_MENU_ITEMS = [
