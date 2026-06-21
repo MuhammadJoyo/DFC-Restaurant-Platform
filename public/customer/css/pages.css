@@ -1141,3 +1141,186 @@ textarea.form-input {
     }
 }
 
+
+/* ==========================================================================
+   Hero Info Pills (Open Hours & Phone)
+   ========================================================================== */
+
+.hero-info-pills {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+}
+
+.info-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgba(255,183,0,0.08);
+    border: 1px solid rgba(255,183,0,0.2);
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-full);
+    letter-spacing: 0.3px;
+}
+
+.info-pill svg {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-info-pills {
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
+   Customer Testimonials Section
+   ========================================================================== */
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.testimonial-card {
+    background-color: var(--dark-surface);
+    border: 1px solid var(--border-color-muted);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::before {
+    content: '\201C';
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 6rem;
+    color: var(--primary);
+    opacity: 0.07;
+    font-family: Georgia, serif;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.testimonial-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 3px;
+    color: var(--primary);
+}
+
+.testimonial-text {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color-muted);
+}
+
+.testimonial-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), #e67600);
+    color: var(--text-dark);
+    font-size: 0.85rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+}
+
+.testimonial-meta strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 2px;
+}
+
+.testimonial-meta span {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   WhatsApp Floating Order Button
+   ========================================================================== */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50px;
+    padding: 0.85rem 1.35rem 0.85rem 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+    transition: all 0.3s ease;
+    animation: wa-pulse 3s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+    background-color: #1da851;
+    box-shadow: 0 8px 35px rgba(37, 211, 102, 0.7);
+    transform: translateY(-3px) scale(1.03);
+    animation: none;
+}
+
+.whatsapp-label {
+    white-space: nowrap;
+}
+
+@keyframes wa-pulse {
+    0%, 100% { box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5); }
+    50% { box-shadow: 0 6px 40px rgba(37, 211, 102, 0.85); }
+}
+
+@media (max-width: 576px) {
+    .whatsapp-float {
+        bottom: 16px;
+        right: 16px;
+        padding: 0.75rem;
+        border-radius: 50%;
+    }
+    .whatsapp-label {
+        display: none;
+    }
+}
